@@ -31,5 +31,10 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(self.calc.divide(9, 3), 3)
 
+    def test_modulo1(self):
+        self.assertEqual(self.calc.modulo(2, 1), 1)
+    def test_modulo2(self):
+        self.assertEqual(self.calc.modulo(3, 1), 1)
+
 if __name__ == '__main__':
     unittest.main()

@@ -6,6 +6,9 @@ class Calculator:
         return a - b 
 
     def multiply(self, a, b):
+        if (a<0) or (b<0):
+            a = abs(a)
+            b = abs(b)
         result = 0
         for i in range(b):
             result = self.add(result, a)
@@ -19,7 +22,7 @@ class Calculator:
         return result
     
     def modulo(self, a, b):
-        while a <= b:
+        while a > b:
             a = a-b
         return a
 
