@@ -76,6 +76,8 @@ class Calculator:
         while a > b:
             if (b == 0):
                 break
+            elif (b < 0):
+                break
             a = a-b
         return a
 
